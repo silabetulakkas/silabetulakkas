@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+
+.ust-menu {
+  background: #1f2937;
+  padding: 15px 0;
+}
+
+.ust-menu .kapsayici {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.menu a:hover {
+  color: #60a5fa;
+}
+
+
+.banner {
+  background: #334155;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h1 {
+  font-size: 32px;
+}
+
+
+.icerik {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.icerik h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.kartlar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.kart {
+  background: #fff;
+  width: calc(33.333% - 14px);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.kart img{
+  width: 100%;
+  height: 200px;      
+  object-fit: cover; 
+  border-radius: 6px 6px 0 0;
+}
+
+.kart h3 {
+  padding: 15px;
+}
+
+.kart p {
+  padding: 0 15px 15px;
+  font-size: 14px;
+}
+
+.devam {
+  display: block;
+  margin: 0 15px 15px;
+  padding: 10px;
+  background: #2563eb;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.post {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+footer {
+  background: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 900px) {
+  .kart {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .ust-menu .kapsayici {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kart {
+    width: 100%;
+  }
+}
